@@ -6,7 +6,7 @@ RUN set -ex;\
 ENV DISPLAY=:0
 RUN pip3 install websockify pyngrok
 #OPSIONAL
-RUN apt-get install nodejs npm xfce4-terminal byobu sqlitebrowser libdbusmenu-glib4 libdbusmenu-gtk3-4 xul-ext-ubufox firefox fonts-lyx geany feh openssh-server php busybox neofetch htop tmate tmux -y
+RUN apt-get install nodejs npm xfce4-terminal byobu sqlitebrowser firefox-esr geany feh openssh-server php busybox neofetch htop tmate tmux -y
 #----------------------
 RUN mkdir /work
 RUN cd /work&&git clone https://github.com/novnc/noVNC/
