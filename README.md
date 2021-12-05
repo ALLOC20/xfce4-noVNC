@@ -1,5 +1,5 @@
 # Deploy
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/krypton-byte/xfce4-noVNC/tree/master)
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/ALLOC20/xfce4-noVNC/tree/master)
 
 # Screenshot
 <p>Ngrok</p>
