@@ -6,10 +6,10 @@ RUN set -ex;\
 ENV DISPLAY=:0
 RUN pip3 install websockify pyngrok
 #OPSIONAL
-RUN wget --no-check-certificate https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb \
+#RUN wget --no-check-certificate https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb \
     && dpkg -i google-chrome-stable_current_amd64.deb || apt -y -f install
-RUN wget https://chromedriver.storage.googleapis.com/88.0.4324.96/chromedriver_linux64.zip&& unzip chromedriver_linux64.zip -d /bin
-RUN apt-get install nodejs npm xfce4-terminal byobu sqlitebrowser geany feh openssh-server php busybox neofetch htop tmate tmux -y
+#RUN wget https://chromedriver.storage.googleapis.com/88.0.4324.96/chromedriver_linux64.zip&& unzip chromedriver_linux64.zip -d /bin
+RUN apt-get install nodejs npm xfce4-terminal byobu sqlitebrowser firefox geany feh openssh-server php busybox neofetch htop tmate tmux -y
 #----------------------
 RUN mkdir /work
 RUN cd /work&&git clone https://github.com/novnc/noVNC/
